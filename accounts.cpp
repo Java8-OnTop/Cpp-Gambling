@@ -124,6 +124,11 @@ void login() {
                 account_number = i;
             }
         }
+        
+        if(my_id == "admin")
+        {
+            cout << "\n\033[32m" << "Logged in as an admin." << endl;
+        }
         // Exit loop if the user presses 0 and would like to go back
         if (strcmp(my_id, "0") == 0) {
             #if _WIN32
